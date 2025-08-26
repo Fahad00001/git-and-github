@@ -3,6 +3,9 @@
 3 setup individaul branch for pyur next code
 
 ex git chekcout -b home
+4 complete your work and commit that works
+ex git add.
+ex git commit -m "commit mesgae"
 
 
 git first time setup
