@@ -1,0 +1,17 @@
+1 create project  and setup essential libraries
+2 deploy project on github
+
+git first time setup
+****************************************
+git config --global user.name "fahad"
+git config --global user.email "fahad.iq010@gmail.com"
+
+
+how to deploy your first code  on github
+
+------------------------------------
+1. craete a repo
+2 git init
+3 git remote add origin repo url (https://github.com/Fahad00001/git-and-github.git)
+4 git add .
+5 git commit -m "project setup"
