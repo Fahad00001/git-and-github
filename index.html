@@ -1,118 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join 3-Hour Web Development Webinar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join 3-Hour Web Development Webinar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 font-sans text-gray-800">
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-20">
-        <div class="container mx-auto px-6 md:px-12 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Join Our 3-Hour Web Development Webinar</h1>
-            <p class="text-lg md:text-2xl mb-8">Learn HTML, CSS, JavaScript & modern web techniques live!</p>
-            <a href="#signup" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">Reserve Your Spot</a>
+  <!-- ✅ Navigation Menu -->
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex items-center justify-between px-6 md:px-12 py-4">
+      <!-- Logo -->
+      <h1 class="text-xl font-bold text-indigo-600">WebDev Webinar</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+        <a href="#about" class="hover:text-indigo-600 transition">About</a>
+        <a href="#schedule" class="hover:text-indigo-600 transition">Schedule</a>
+        <a href="/login.html" class="hover:text-indigo-600 transition">Sign Up</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-white shadow-md md:hidden">
+      <nav class="flex flex-col space-y-4 py-4 px-6 font-medium text-gray-700">
+        <a href="#about" class="hover:text-indigo-600 transition">About</a>
+        <a href="#schedule" class="hover:text-indigo-600 transition">Schedule</a>
+        <a href="#signup" class="hover:text-indigo-600 transition">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-24 md:py-32 mt-16">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Join Our 3-Hour Web Development Webinar</h1>
+      <p class="text-lg md:text-2xl mb-8">Learn HTML, CSS, JavaScript & modern web techniques live!</p>
+      <a href="#signup" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">Reserve Your Spot</a>
+    </div>
+  </section>
+
+  <!-- About Webinar Section -->
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1581091012184-4e017a1ad28e?auto=format&fit=crop&w=800&q=80" alt="Webinar" class="rounded-lg shadow-lg">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">What You'll Learn</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>HTML & CSS fundamentals</li>
+          <li>JavaScript for interactive websites</li>
+          <li>Responsive web design techniques</li>
+          <li>Modern web development tips & tricks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Countdown Section -->
+  <section id="schedule" class="bg-indigo-600 text-white py-16">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Webinar Starts In</h2>
+      <div class="flex justify-center space-x-6 mt-6 text-2xl md:text-4xl font-mono">
+        <div>
+          <span id="days">00</span>
+          <p class="text-sm md:text-base">Days</p>
         </div>
-    </section>
-
-    <!-- About Webinar Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <img src="https://images.unsplash.com/photo-1581091012184-4e017a1ad28e?auto=format&fit=crop&w=800&q=80" alt="Webinar" class="rounded-lg shadow-lg">
-            <div>
-                <h2 class="text-3xl font-bold mb-4">What You'll Learn</h2>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>HTML & CSS fundamentals</li>
-                    <li>JavaScript for interactive websites</li>
-                    <li>Responsive web design techniques</li>
-                    <li>Modern web development tips & tricks</li>
-                </ul>
-            </div>
+        <div>
+          <span id="hours">00</span>
+          <p class="text-sm md:text-base">Hours</p>
         </div>
-    </section>
-
-    <!-- Countdown Section -->
-    <section class="bg-indigo-600 text-white py-16">
-        <div class="container mx-auto px-6 md:px-12 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Webinar Starts In</h2>
-            <div class="flex justify-center space-x-6 mt-6 text-2xl md:text-4xl font-mono">
-                <div>
-                    <span id="days">00</span>
-                    <p class="text-sm md:text-base">Days</p>
-                </div>
-                <div>
-                    <span id="hours">00</span>
-                    <p class="text-sm md:text-base">Hours</p>
-                </div>
-                <div>
-                    <span id="minutes">00</span>
-                    <p class="text-sm md:text-base">Minutes</p>
-                </div>
-                <div>
-                    <span id="seconds">00</span>
-                    <p class="text-sm md:text-base">Seconds</p>
-                </div>
-            </div>
+        <div>
+          <span id="minutes">00</span>
+          <p class="text-sm md:text-base">Minutes</p>
         </div>
-    </section>
-
-    <!-- Signup Form Section -->
-    <section id="signup" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6 md:px-12 max-w-lg bg-white p-8 rounded-xl shadow-lg">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Sign Up for the Webinar</h2>
-            <form class="space-y-4">
-                <div>
-                    <label class="block mb-2 font-semibold">Full Name</label>
-                    <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
-                <div>
-                    <label class="block mb-2 font-semibold">Email Address</label>
-                    <input type="email" placeholder="you@example.com" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
-                <button type="submit" class="w-full bg-indigo-600 text-white font-semibold px-4 py-3 rounded-lg hover:bg-indigo-700 transition">Join Now</button>
-            </form>
+        <div>
+          <span id="seconds">00</span>
+          <p class="text-sm md:text-base">Seconds</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-200 py-6">
-        <div class="container mx-auto px-6 md:px-12 text-center">
-            <p>&copy; 2025 WebDev Webinar. All rights reserved.</p>
+  <!-- Signup Form Section -->
+  <!-- <section id="signup" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 md:px-12 max-w-lg bg-white p-8 rounded-xl shadow-lg">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Sign Up for the Webinar</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block mb-2 font-semibold">Full Name</label>
+          <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
         </div>
-    </footer>
+        <div>
+          <label class="block mb-2 font-semibold">Email Address</label>
+          <input type="email" placeholder="you@example.com" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 text-white font-semibold px-4 py-3 rounded-lg hover:bg-indigo-700 transition">Join Now</button>
+      </form>
+    </div>
+  </section> -->
 
-    <!-- Countdown Script -->
-    <script>
-        const countdownDate = new Date().getTime() + 3*24*60*60*1000; // Example: 3 days from now
-        const daysEl = document.getElementById('days');
-        const hoursEl = document.getElementById('hours');
-        const minutesEl = document.getElementById('minutes');
-        const secondsEl = document.getElementById('seconds');
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-6">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+      <p>&copy; 2025 WebDev Webinar. All rights reserved.</p>
+    </div>
+  </footer>
 
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
+  <!-- Countdown Script -->
+  <script>
+    const countdownDate = new Date().getTime() + 3*24*60*60*1000; // Example: 3 days from now
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
 
-            daysEl.innerText = String(days).padStart(2, '0');
-            hoursEl.innerText = String(hours).padStart(2, '0');
-            minutesEl.innerText = String(minutes).padStart(2, '0');
-            secondsEl.innerText = String(seconds).padStart(2, '0');
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            if(distance < 0){
-                clearInterval(interval);
-                daysEl.innerText = hoursEl.innerText = minutesEl.innerText = secondsEl.innerText = '00';
-            }
-        }
+      daysEl.innerText = String(days).padStart(2, '0');
+      hoursEl.innerText = String(hours).padStart(2, '0');
+      minutesEl.innerText = String(minutes).padStart(2, '0');
+      secondsEl.innerText = String(seconds).padStart(2, '0');
 
-        const interval = setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
+      if(distance < 0){
+        clearInterval(interval);
+        daysEl.innerText = hoursEl.innerText = minutesEl.innerText = secondsEl.innerText = '00';
+      }
+    }
+
+    const interval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // ✅ Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>

@@ -7,6 +7,8 @@ ex git chekcout -b home
 ex git add.
 ex git commit -m "commit mesgae"
 
+5 push branch  origin home
+6 if website completed then merge all branches
 
 git first time setup
 ****************************************
