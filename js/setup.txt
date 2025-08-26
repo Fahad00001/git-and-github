@@ -15,3 +15,7 @@ how to deploy your first code  on github
 3 git remote add origin repo url (https://github.com/Fahad00001/git-and-github.git)
 4 git add .
 5 git commit -m "project setup"
+
+
+how to get source code from github
+1 git clone https://github.com/Fahad00001/git-and-github.git
