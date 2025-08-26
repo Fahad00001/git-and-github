@@ -1,5 +1,9 @@
 1 create project  and setup essential libraries
 2 deploy project on github
+3 setup individaul branch for pyur next code
+
+ex git chekcout -b home
+
 
 git first time setup
 ****************************************
@@ -20,3 +24,19 @@ how to deploy your first code  on github
 
 how to get source code from github
 1 git clone https://github.com/Fahad00001/git-and-github.git
+
+************************************
+
+branches
+how to create branch
+********************************
+1 git branch home (create branch)
+2 how to checkout brnach (sleect) change branches
+3 how to list branch
+git branch
+
+4 how to dleete branch
+git branch -d or -D home
+
+5 how to craete a branch checkout after creation automatically
+git checkout -b home 
